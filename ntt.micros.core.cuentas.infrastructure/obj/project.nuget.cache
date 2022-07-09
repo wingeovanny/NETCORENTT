@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "polp0b8AsXNy0za1RRPY0Svx5ebEJDyltP59iIZwJy0tfmoB0wqniy4fKsBdNrynVqqcU5YDNYrIWpBbIiNzwg==",
+  "dgSpecHash": "ZWJulYt/kpZ/hK8sW2UzGHDbrr1WEVS7++UmI5t62NusiRL98ch2ZvB3OPpBio5OaGyyiSL/pDO9MzKW02MTRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\2.2.0\\microsoft.extensions.fileproviders.physical.2.2.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\2.2.0\\microsoft.extensions.filesystemglobbing.2.2.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.http\\3.1.9\\microsoft.extensions.http.3.1.9.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
@@ -48,6 +49,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.15.0\\microsoft.identitymodel.tokens.6.15.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net\\5.0.2\\prometheus-net.5.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net.aspnetcore\\5.0.2\\prometheus-net.aspnetcore.5.0.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\serilog.extensions.logging\\3.1.0\\serilog.extensions.logging.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\serilog.settings.configuration\\3.3.0\\serilog.settings.configuration.3.3.0.nupkg.sha512",

@@ -13,11 +13,10 @@ namespace ntt.micros.core.cuentas.api.Controllers
     public class CuentaController : ControllerBase
     {
         private readonly ICuentaRepository _cuentaRepository;
-        private readonly AppDbContext _context;
-        public CuentaController(ICuentaRepository cuentaRepository, AppDbContext context)
+      
+        public CuentaController(ICuentaRepository cuentaRepository)
         {
-            _cuentaRepository = cuentaRepository;
-            _context = context;
+            _cuentaRepository = cuentaRepository;         
         }
 
         /// <summary>

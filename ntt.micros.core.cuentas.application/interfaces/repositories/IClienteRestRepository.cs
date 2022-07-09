@@ -9,6 +9,11 @@ namespace ntt.micros.core.cuentas.application.interfaces.repositories
 {
     public interface IClienteRestRepository
     {
-        Task<ClienteResponse> ConsultaCliente(string identificacion);
+        Task<List<ClienteResponse>> ConsultaClientes();
+        Task<ClienteResponse> ConsultaClienteID(string identificacion);
+        Task<ClienteResponse> CrearCliente(ClienteRequest request);
+        int EliminarCliente(string identificacion);
+        Task<ClienteRequest> ActualizarCliente(ClienteRequest request);
+
     }
 }

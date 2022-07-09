@@ -1,10 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "p9bB+TQFrtaMw9f/S2NPjVNunPn/10BTADljIOMKoD0fKjjZ9x2x2B6koL8mxhzH1hsqB377kb9n686SFnc3Bg==",
+  "dgSpecHash": "r/DZUSOrV0J52eEBntE4LBdYE1f37ZI9xfNQt9FZ8ZqVDJ006xvbF8v61gcKWsAmM9CYwlcCViQIyqbfKJX0pA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.http\\3.1.9\\microsoft.extensions.http.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging\\3.1.9\\microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net\\5.0.2\\prometheus-net.5.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net.aspnetcore\\5.0.2\\prometheus-net.aspnetcore.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }

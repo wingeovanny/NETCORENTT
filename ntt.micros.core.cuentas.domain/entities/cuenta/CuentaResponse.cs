@@ -13,5 +13,6 @@ namespace ntt.micros.core.cuentas.domain.entities.cuenta
         public double SaldoInicial { get; set; }
         public bool Estado { get; set; }
         public string? Cliente { get; set; }
+        public string? NumeroCuenta { get; set; }
     }
 }

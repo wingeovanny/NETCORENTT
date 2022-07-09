@@ -27,11 +27,9 @@ namespace ntt.micros.core.cuentas.infrastructure.data.Context
             // in memory database used for simplicity, change to a real db for production applications
             options.UseInMemoryDatabase("TestDb");
         }
-
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Cuenta> Cuentas { get; set; }
         public DbSet<Movimiento> Movimientos { get; set; }
-
         public DbSet<User> Users { get; set; }
     }
 }

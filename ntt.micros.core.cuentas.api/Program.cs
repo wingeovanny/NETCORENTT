@@ -2,9 +2,8 @@ using Microsoft.OpenApi.Models;
 using ntt.micros.core.cuentas.api.Extentions;
 using ntt.micros.core.cuentas.application.ioc;
 using ntt.micros.core.cuentas.infrastructure.ioc;
-using Microsoft.EntityFrameworkCore;
-using ntt.micros.core.cuentas.infrastructure.data.Context;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
+using ntt.micros.core.cuentas.infrastructure.extentions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddCors();
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
+builder.Services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    //options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+                })
+                ;
 //builder.Services.AddControllers().AddJsonOptions(x =>
 //{
 //    // serialize enums as strings in api responses (e.g. Role)
@@ -23,7 +29,6 @@ builder.Services.AddControllers();
 //});
 //builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -72,9 +77,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-
-
+app.ConfigureMetricServer();
+app.ConfigureExceptionHandler();
 
 app.UseHttpsRedirection();
 

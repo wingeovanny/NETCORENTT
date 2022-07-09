@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ntt.micros.core.cuentas.domain.entities.cliente
 {
-    public class ClienteResponse:Persona
+    public class ClienteResponse
     {
-        public string? Contraseña { get; set; }
-        public string? Estado { get; set; }
+        public int ClienteID { get; set; }
+        public string? Nombre { get; set; }
+        public string? Identificacion { get; set; }
+        public string? Direccion { get; set; }
+        public string? Telefono { get; set; }
+        public string? Genero { get; set; }
+        public int? Edad { get; set; }
     }
 }
