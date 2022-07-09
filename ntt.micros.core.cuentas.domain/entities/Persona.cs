@@ -8,7 +8,7 @@ namespace ntt.micros.core.cuentas.domain.entities
 {
     public  class Persona
     {
-        public int Id { get; set; }
+        public int PersonaID { get; set; }
         public string? Nombre { get; set; }
         public string? Identificacion { get; set; }
         public string? Direccion { get; set; }
