@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ntt.micros.core.cuentas.domain.entities.cliente;
+using ntt.micros.core.cuentas.domain.entities.movimiento;
 
 namespace ntt.micros.core.cuentas.domain.entities.cuenta
 {
@@ -13,7 +10,7 @@ namespace ntt.micros.core.cuentas.domain.entities.cuenta
         public string? TipoCuenta { get; set; }
         public double? SaldoInicial { get; set; }
         public string? Estado { get; set; }
-
-
+        public Cliente? Cliente { get; set; }
+        
     }
 }

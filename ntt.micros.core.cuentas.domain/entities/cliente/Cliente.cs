@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using ntt.micros.core.cuentas.domain.entities.cuenta;
 
 namespace ntt.micros.core.cuentas.domain.entities.cliente
 {
@@ -11,5 +11,6 @@ namespace ntt.micros.core.cuentas.domain.entities.cliente
         public int ClienteID { get; set; }
         public string? Contraseña { get; set; }    
         public string? Estado { get; set; }    
+
     }
 }
