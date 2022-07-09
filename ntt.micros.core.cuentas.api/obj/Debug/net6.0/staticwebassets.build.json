@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CQA+h/vJyRoz5rJ+4cN8zgpzkDZtUAAba6xM6MC9eSk=",
+  "Source": "ntt.micros.core.cuentas.api",
+  "BasePath": "_content/ntt.micros.core.cuentas.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

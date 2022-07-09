@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="interfaces\services\" />
+    <Folder Include="interfaces\repositories\" />
+    <Folder Include="ioc\" />
+    <Folder Include="models\dto\" />
+    <Folder Include="models\exeptions\" />
+    <Folder Include="services\" />
+  </ItemGroup>
+
+</Project>
