@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "ntt.micros.core.cuentas.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ntt.micros.core.cuentas.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ntt.micros.core.cuentas.domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "ntt.micros.core.cuentas.domain/1.0.0": {
+      "type": "project",
+      "path": "../ntt.micros.core.cuentas.domain/ntt.micros.core.cuentas.domain.csproj",
+      "msbuildProject": "../ntt.micros.core.cuentas.domain/ntt.micros.core.cuentas.domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
+      "ntt.micros.core.cuentas.domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
@@ -13,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
       "projectName": "ntt.micros.core.cuentas.application",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +90,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,6 +106,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

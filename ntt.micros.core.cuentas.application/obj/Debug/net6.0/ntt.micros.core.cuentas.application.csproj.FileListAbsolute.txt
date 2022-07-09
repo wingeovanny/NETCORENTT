@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\bin\Debug\net6.0\ntt.micros.core.cuentas.application.deps.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\bin\Debug\net6.0\ntt.micros.core.cuentas.application.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\bin\Debug\net6.0\ntt.micros.core.cuentas.application.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\bin\Debug\net6.0\ntt.micros.core.cuentas.domain.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\bin\Debug\net6.0\ntt.micros.core.cuentas.domain.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.AssemblyInfo.cs
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.csproj.CopyComplete
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\refint\ntt.micros.core.cuentas.application.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ntt.micros.core.cuentas.application.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.application\obj\Debug\net6.0\ref\ntt.micros.core.cuentas.application.dll

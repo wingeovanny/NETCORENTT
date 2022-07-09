@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
       "projectName": "ntt.micros.core.cuentas.domain",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\nt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

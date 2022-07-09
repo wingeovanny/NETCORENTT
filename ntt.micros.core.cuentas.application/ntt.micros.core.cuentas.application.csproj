@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="interfaces\services\" />
-    <Folder Include="interfaces\repositories\" />
-    <Folder Include="ioc\" />
-    <Folder Include="models\dto\" />
     <Folder Include="models\exeptions\" />
-    <Folder Include="services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ntt.micros.core.cuentas.domain\ntt.micros.core.cuentas.domain.csproj" />
   </ItemGroup>
 
 </Project>
