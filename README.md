@@ -1,2 +1,2 @@
 # nttData
-ApiRest con NET6 utilizando INyeccion de dependecia, IoC y Repository Pattern entre otras cosoas
+ApiRest con NET6 utilizando Inyeccion de dependecia, IoC y Repository Pattern entre otras cosoas
