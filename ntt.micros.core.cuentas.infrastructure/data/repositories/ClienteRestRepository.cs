@@ -14,7 +14,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
         {
             ClienteResponse result = new()
             {
-                Identificacion = ""
+                Identificacion = "12121212"
             };
 
             return result;

@@ -2,13 +2,29 @@ using Microsoft.OpenApi.Models;
 using ntt.micros.core.cuentas.api.Extentions;
 using ntt.micros.core.cuentas.application.ioc;
 using ntt.micros.core.cuentas.infrastructure.ioc;
-
+using Microsoft.EntityFrameworkCore;
+using ntt.micros.core.cuentas.infrastructure.data.Context;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+builder.Services.AddCors();
 builder.Services.AddControllers();
+//builder.Services.AddControllers().AddJsonOptions(x =>
+//{
+//    // serialize enums as strings in api responses (e.g. Role)
+//    x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+
+//    // ignore omitted parameters on models to enable optional params (e.g. User update)
+//    x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+//});
+//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
@@ -43,6 +59,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.RegisterDependencies();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
+
 
 
 

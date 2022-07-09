@@ -15,3 +15,5 @@ C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.infrastructure\bin\Debug\net6.0\ntt.micros.core.cuentas.application.pdb
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.infrastructure\bin\Debug\net6.0\ntt.micros.core.cuentas.domain.pdb
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.infrastructure\obj\Debug\net6.0\ntt.micros.core.cuentas.infrastructure.csproj.CopyComplete
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.infrastructure\bin\Debug\net6.0\ntt.micros.core.cuentas.infrastructure.runtimeconfig.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.infrastructure\obj\Debug\net6.0\ntt.micros.core.cuentas.infrastructure.genruntimeconfig.cache

@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ntt.micros.core.cuentas.application.interfaces.services;
 using ntt.micros.core.cuentas.application.models.dto;
 using ntt.micros.core.cuentas.domain.entities.cuenta;
+using ntt.micros.core.cuentas.infrastructure.data.Context;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace ntt.micros.core.cuentas.api.Controllers
 {
@@ -10,10 +13,11 @@ namespace ntt.micros.core.cuentas.api.Controllers
     public class CuentaController : ControllerBase
     {
         private readonly ICuentaRepository _cuentaRepository;
-
-        public CuentaController(ICuentaRepository cuentaRepository)
+        private readonly AppDbContext _context;
+        public CuentaController(ICuentaRepository cuentaRepository, AppDbContext context)
         {
             _cuentaRepository = cuentaRepository;
+            _context = context;
         }
 
         /// <summary>
@@ -34,6 +38,8 @@ namespace ntt.micros.core.cuentas.api.Controllers
             CuentaResponse _response = await _cuentaRepository.ConsultaCuenta(cuenta);
             return Ok(new MsDtoResponse<CuentaResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
         }
+
+      
 
     }
 }

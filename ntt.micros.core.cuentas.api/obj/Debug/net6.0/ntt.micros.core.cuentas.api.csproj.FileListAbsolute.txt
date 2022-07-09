@@ -72,3 +72,8 @@ C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\ntt.micros.core.cuentas.infrastructure.dll
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\ntt.micros.core.cuentas.infrastructure.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.api\bin\Debug\net6.0\BCrypt.Net-Next.dll

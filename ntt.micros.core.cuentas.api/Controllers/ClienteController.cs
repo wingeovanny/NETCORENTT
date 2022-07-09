@@ -27,7 +27,7 @@ namespace ntt.micros.core.cuentas.api.Controllers
         public async Task<ActionResult<MsDtoResponse<ClienteResponse>>> ConsultaCliente([FromHeader][Required] string identificacion)
 
         {
-            ClienteResponse _response = await _clienteRepository.ConsultaCuenta(identificacion);
+            ClienteResponse _response = await _clienteRepository.ConsultaCliente(identificacion);
             return Ok(new MsDtoResponse<ClienteResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
         }
     }
