@@ -12,7 +12,7 @@ namespace ntt.micros.core.cuentas.application.ioc
             services.AddScoped<ICuentaRepository, CuentaRepository>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<IMovimientoRepository, MovimientoRepository>();
-            services.AddScoped<IUserService, UserService>();
+            
             return services;
         }
     }

@@ -28,8 +28,7 @@ namespace ntt.micros.core.cuentas.infrastructure.ioc
             services.AddScoped<ICuentaRestRepository, CuentaRestRepository>();
             services.AddScoped<IClienteRestRepository, ClienteRestRepository>();
             services.AddScoped<IMovimientoRestRepository, MovimientoRestRepository>();
-            services.AddScoped<IUserRestService, UserRestService>();
-
+            
 
             return services;
 

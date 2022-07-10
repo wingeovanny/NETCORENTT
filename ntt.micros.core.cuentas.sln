@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{440F03BB-FA1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1FB2A64D-BE81-4935-9CD2-3152577FCACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntt.micros.core.cuentas.api", "ntt.micros.core.cuentas.api\ntt.micros.core.cuentas.api.csproj", "{07A23801-3E5A-43EC-89DD-D97AEC395BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ntt.micros.core.cuentas.api", "ntt.micros.core.cuentas.api\ntt.micros.core.cuentas.api.csproj", "{07A23801-3E5A-43EC-89DD-D97AEC395BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntt.micros.core.cuentas.application", "ntt.micros.core.cuentas.application\ntt.micros.core.cuentas.application.csproj", "{C789A8CE-E1C0-4063-9E7F-65DE4705FDAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ntt.micros.core.cuentas.application", "ntt.micros.core.cuentas.application\ntt.micros.core.cuentas.application.csproj", "{C789A8CE-E1C0-4063-9E7F-65DE4705FDAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntt.micros.core.cuentas.domain", "ntt.micros.core.cuentas.domain\ntt.micros.core.cuentas.domain.csproj", "{04E4F0BA-8E31-476B-A8CD-6A2868A52B32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ntt.micros.core.cuentas.domain", "ntt.micros.core.cuentas.domain\ntt.micros.core.cuentas.domain.csproj", "{04E4F0BA-8E31-476B-A8CD-6A2868A52B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntt.micros.core.cuentas.infrastructure", "ntt.micros.core.cuentas.infrastructure\ntt.micros.core.cuentas.infrastructure.csproj", "{1BD32006-B0F8-43F2-9392-84FC9FE61745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ntt.micros.core.cuentas.infrastructure", "ntt.micros.core.cuentas.infrastructure\ntt.micros.core.cuentas.infrastructure.csproj", "{1BD32006-B0F8-43F2-9392-84FC9FE61745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntt.micros.core.cuentas.TestNTTData", "ntt.micros.core.cuentas.TestNTTData\ntt.micros.core.cuentas.TestNTTData.csproj", "{B16EDE51-FD8F-443E-8FE8-07B66D61AB66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{1BD32006-B0F8-43F2-9392-84FC9FE61745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BD32006-B0F8-43F2-9392-84FC9FE61745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BD32006-B0F8-43F2-9392-84FC9FE61745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16EDE51-FD8F-443E-8FE8-07B66D61AB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16EDE51-FD8F-443E-8FE8-07B66D61AB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16EDE51-FD8F-443E-8FE8-07B66D61AB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16EDE51-FD8F-443E-8FE8-07B66D61AB66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{C789A8CE-E1C0-4063-9E7F-65DE4705FDAA} = {440F03BB-FA11-441B-B22A-C89187566B8D}
 		{04E4F0BA-8E31-476B-A8CD-6A2868A52B32} = {440F03BB-FA11-441B-B22A-C89187566B8D}
 		{1BD32006-B0F8-43F2-9392-84FC9FE61745} = {440F03BB-FA11-441B-B22A-C89187566B8D}
+		{B16EDE51-FD8F-443E-8FE8-07B66D61AB66} = {1FB2A64D-BE81-4935-9CD2-3152577FCACD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD23B41D-97F0-4214-A200-4F1E7D1720E3}

@@ -1,0 +1,430 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.TestNTTData\\ntt.micros.core.cuentas.TestNTTData.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\ntt.micros.core.cuentas.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\ntt.micros.core.cuentas.api.csproj",
+        "projectName": "ntt.micros.core.cuentas.api",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\ntt.micros.core.cuentas.api.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
+        "projectName": "ntt.micros.core.cuentas.application",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
+        "projectName": "ntt.micros.core.cuentas.domain",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj",
+        "projectName": "ntt.micros.core.cuentas.infrastructure",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.0, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.TestNTTData\\ntt.micros.core.cuentas.TestNTTData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.TestNTTData\\ntt.micros.core.cuentas.TestNTTData.csproj",
+        "projectName": "ntt.micros.core.cuentas.TestNTTData",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.TestNTTData\\ntt.micros.core.cuentas.TestNTTData.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.TestNTTData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\ntt.micros.core.cuentas.api.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.api\\ntt.micros.core.cuentas.api.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.application\\ntt.micros.core.cuentas.application.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.domain\\ntt.micros.core.cuentas.domain.csproj"
+              },
+              "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.infrastructure\\ntt.micros.core.cuentas.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
