@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.16.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ntt.micros.core.cuentas.applicationDB\ntt.micros.core.cuentas.applicationDB.csproj" />
+    <ProjectReference Include="..\ntt.micros.core.cuentas.domainDB\ntt.micros.core.cuentas.domainDB.csproj" />
+    <ProjectReference Include="..\ntt.micros.core.cuentas.infrastructureDB\ntt.micros.core.cuentas.infrastructureDB.csproj" />
+  </ItemGroup>
+
+</Project>

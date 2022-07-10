@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "VwgI8gixT84d2Gm68WX//3JMwj6YwKgxu5MYX5Yro+6+/xSzPevDI/TDUcEHc2KHIZ+7N+Op6bX3G9wLx+6jug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\repos\\ntt.micros.core.cuentas\\ntt.micros.core.cuentas.applicationDB\\ntt.micros.core.cuentas.applicationDB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.http\\3.1.9\\microsoft.extensions.http.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging\\3.1.9\\microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net\\6.0.0\\prometheus-net.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\prometheus-net.aspnetcore\\6.0.0\\prometheus-net.aspnetcore.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

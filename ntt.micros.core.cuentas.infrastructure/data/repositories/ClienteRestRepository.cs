@@ -37,6 +37,10 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
         {
             List<Cliente> user = await _context.Clientes.ToListAsync();
 
+            if (user == null)
+            {
+                throw new BaseCustomException("Transaccion exisota", "Clientes no existe", 200);
+            }
             var clientesResult = _mapper.Map<List<ClienteResponse>>(user);
 
             return clientesResult; 

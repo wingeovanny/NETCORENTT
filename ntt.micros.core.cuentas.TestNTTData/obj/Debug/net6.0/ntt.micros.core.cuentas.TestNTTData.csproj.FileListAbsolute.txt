@@ -140,3 +140,8 @@ C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\obj\Debug\net6.0\ntt.micros.core.cuentas.TestNTTData.pdb
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\obj\Debug\net6.0\ntt.micros.core.cuentas.TestNTTData.genruntimeconfig.cache
 C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\obj\Debug\net6.0\ref\ntt.micros.core.cuentas.TestNTTData.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\bin\Debug\net6.0\out\web.config
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\bin\Debug\net6.0\out\appsettings.Development.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\bin\Debug\net6.0\out\appsettings.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\bin\Debug\net6.0\out\ntt.micros.core.cuentas.api.deps.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.TestNTTData\bin\Debug\net6.0\out\ntt.micros.core.cuentas.api.runtimeconfig.json

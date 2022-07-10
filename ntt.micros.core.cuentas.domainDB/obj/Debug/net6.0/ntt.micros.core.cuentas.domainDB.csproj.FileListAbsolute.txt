@@ -1,0 +1,12 @@
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\bin\Debug\net6.0\ntt.micros.core.cuentas.domainDB.deps.json
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\bin\Debug\net6.0\ntt.micros.core.cuentas.domainDB.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\bin\Debug\net6.0\ntt.micros.core.cuentas.domainDB.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.AssemblyInfo.cs
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\refint\ntt.micros.core.cuentas.domainDB.dll
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ntt.micros.core.cuentas.domainDB.pdb
+C:\Users\Usuario\Documents\repos\ntt.micros.core.cuentas\ntt.micros.core.cuentas.domainDB\obj\Debug\net6.0\ref\ntt.micros.core.cuentas.domainDB.dll

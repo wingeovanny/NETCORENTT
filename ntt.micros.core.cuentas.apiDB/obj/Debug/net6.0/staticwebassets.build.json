@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "I/kB3wEzXMraJa8JCu0X3EWa2vS+UIrDtMy0LQkbGdk=",
+  "Source": "ntt.micros.core.cuentas.apiDB",
+  "BasePath": "_content/ntt.micros.core.cuentas.apiDB",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
