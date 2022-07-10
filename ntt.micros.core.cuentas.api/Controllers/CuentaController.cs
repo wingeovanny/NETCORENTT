@@ -45,10 +45,10 @@ namespace ntt.micros.core.cuentas.api.Controllers
         [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
         [ProducesResponseType(typeof(MsDtoResponseError), 400)]
         [ProducesResponseType(typeof(MsDtoResponseError), 500)]
-        public async Task<ActionResult<MsDtoResponse<List<CuentaResponse>>>> ConsultaCuentas([FromHeader][Required] string identificacion)
+        public async Task<ActionResult<MsDtoResponse<List<CuentaResponse>>>> ConsultaCuentas()
 
         {
-            List<CuentaResponse> _response = await _cuentaRepository.ConsultaCuentas(identificacion);
+            List<CuentaResponse> _response = await _cuentaRepository.ConsultaCuentas();
             return Ok(new MsDtoResponse<List<CuentaResponse>>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
         }
 
@@ -90,10 +90,10 @@ namespace ntt.micros.core.cuentas.api.Controllers
         [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
         [ProducesResponseType(typeof(MsDtoResponseError), 400)]
         [ProducesResponseType(typeof(MsDtoResponseError), 500)]
-        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> EliminarCuenta([FromHeader][Required] string identificacion)
+        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> EliminarCuenta([FromHeader][Required] string cuenta)
 
         {
-            CuentaResponse _response = await _cuentaRepository.EliminarCuenta(identificacion);
+            CuentaResponse _response = await _cuentaRepository.EliminarCuenta(cuenta);
             return Ok(new MsDtoResponse<CuentaResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
 
         }

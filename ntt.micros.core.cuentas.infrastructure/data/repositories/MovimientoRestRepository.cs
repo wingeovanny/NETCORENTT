@@ -76,24 +76,28 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
         public async Task<MovimientoResponse> CrearMovimiento(MovimientoRequest request)
         {
 
-            MovimientoResponse dato = new MovimientoResponse();
-            // map model to new user object
+            MovimientoResponse dato = new();
+           
             var mov = _mapper.Map<Movimiento>(request);
-
-            // save user
+            mov.FechaMovimento = DateTime.Now;
             _context.Movimientos.Add(mov);
             _context.SaveChanges();
 
             await _context.SaveChangesAsync();
 
-            return dato = _mapper.Map<MovimientoResponse>(mov);
+            dato = _mapper.Map<MovimientoResponse>(mov);
+
+            dato.SaldoInicial = request.SaldoInicial;
+            dato.NumeroCuenta = request.NumeroCuenta;
+
+            return dato;
         }
 
         public async Task<MovimientoResponse> EliminarMovimiento(string numeroCuenta, int idMovimiento)
         {
             var entity = await _context.Movimientos.FirstOrDefaultAsync(x => x.Id == idMovimiento);
 
-            MovimientoResponse dato = new MovimientoResponse();
+            MovimientoResponse dato = new();
             if (entity != null)
             {
                 var cta = getMov(Convert.ToInt32(entity.Id));
@@ -103,7 +107,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
             }
             else
             {
-                throw new BaseCustomException("", "Cuenta no existe", 400);
+                throw new BaseCustomException("", "Movimiento no existe", 400);
             }
 
             return dato;

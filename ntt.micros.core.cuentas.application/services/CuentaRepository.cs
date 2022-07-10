@@ -28,9 +28,9 @@ namespace ntt.micros.core.cuentas.application.services
             return await _icuentaRestRepository.ConsultaCuentaID(numeroCuenta);
         }
 
-        public async Task<List<CuentaResponse>> ConsultaCuentas(string identificacion)
+        public async Task<List<CuentaResponse>> ConsultaCuentas()
         {
-            return await _icuentaRestRepository.ConsultaCuentas(identificacion);
+            return await _icuentaRestRepository.ConsultaCuentas();
         }
 
         public async Task<CuentaResponse> CrearCuenta(CuentaRequest request)

@@ -21,7 +21,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
         public async Task<ClienteResponse> ConsultaClienteID(string identificacion)
         {
             
-            Cliente user = await _context.Clientes.FirstOrDefaultAsync(x=> x.Identificacion == identificacion);// .FirstOrDefault(x => x.Identificacion == identificacion);
+            Cliente user = await _context.Clientes.FirstOrDefaultAsync(x=> x.Identificacion == identificacion);
 
             if (user == null)
             {

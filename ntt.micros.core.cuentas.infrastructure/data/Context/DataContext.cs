@@ -22,8 +22,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.Context
             Configuration = configuration;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            // in memory database used for simplicity, change to a real db for production applications
+        {            
             options.UseInMemoryDatabase("TestDb");
         }
         public DbSet<Cliente> Clientes { get; set; }

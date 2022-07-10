@@ -27,6 +27,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
                 entity.SaldoInicial = request.SaldoInicial;
                 entity.Estado = request.Estado;
                 entity.TipoCuenta = request.TipoCuenta;
+                
                 _context.Entry(entity).State = EntityState.Modified;
 
                 _context.Entry(entity).CurrentValues.SetValues(request);
@@ -35,7 +36,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
             else
             {
 
-                throw new BaseCustomException("No existe cliente para actualizar", "", 400);
+                throw new BaseCustomException("No existe Cuenta para actualizar", "", 400);
 
             }
 
@@ -50,7 +51,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
 
             if (user == null)
             {
-                throw new BaseCustomException("Transaccion exisota", "Cliente no existe", 200);
+                throw new BaseCustomException("Transaccion exisota", "Cuenta no existe", 200);
             }
 
             var clientesResult = _mapper.Map<CuentaResponse>(user);
@@ -58,27 +59,26 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
             return clientesResult;
         }
 
-        public async Task<List<CuentaResponse>> ConsultaCuentas(string identificacion)
+        public async Task<List<CuentaResponse>> ConsultaCuentas()
         {
-            List<Cuenta> user = await _context.Cuentas.ToListAsync();// Where(x=> x.NumeroCuenta == identificacion);
+            List<Cuenta> user = await _context.Cuentas.ToListAsync();
 
             var clientesResult = _mapper.Map<List<CuentaResponse>>(user);
 
-            return clientesResult.Where(x=> x.NombreCliente == identificacion).ToList();
+            return clientesResult;
         }
 
         public async Task<CuentaResponse> CrearCuenta(CuentaRequest request)
         {
             if (_context.Cuentas.Any(x => x.NumeroCuenta == request.NumeroCuenta))
             {
-                throw new BaseCustomException("", "Cliente ya existe", 400);
+                throw new BaseCustomException("", "Cuenta ya existe", 400);
             }
 
             CuentaResponse dato = new CuentaResponse();
-            // map model to new user object
+            
             var cuenta = _mapper.Map<Cuenta>(request);
 
-            // save user
             _context.Cuentas.Add(cuenta);
             _context.SaveChanges();
 

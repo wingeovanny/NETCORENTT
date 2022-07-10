@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using ntt.micros.core.cuentas.domain.entities.movimiento;
-using AutoMapper;
-using System.Threading.Tasks;
-using ntt.micros.core.cuentas.domain.entities;
+﻿using AutoMapper;
 using ntt.micros.core.cuentas.domain.entities.cliente;
 using ntt.micros.core.cuentas.domain.entities.cuenta;
+using ntt.micros.core.cuentas.domain.entities.movimiento;
 
 namespace ntt.micros.core.cuentas.infrastructure.mappings
 {
@@ -27,9 +22,24 @@ namespace ntt.micros.core.cuentas.infrastructure.mappings
 
 
             // ClienteRequest -> Cliente
-            CreateMap<MovimientoRequest, Movimiento>();
-            CreateMap<Movimiento, MovimientoResponse>();
-            
+            CreateMap<MovimientoRequest, Movimiento>()
+                .ForMember(dest => dest.Id, source => source.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Saldo, source => source.MapFrom(src => src.SaldoInicial))
+                .ForMember(dest => dest.TipoMovimiento, source => source.MapFrom(src => src.DescripcionMovimiento));
+
+            CreateMap<Movimiento, MovimientoResponse>()
+                 .ForMember(dest => dest.Id, source => source.MapFrom(src => src.Id))
+                 .ForMember(dest => dest.TipoCuenta, source => source.MapFrom(src => src.TipoMovimiento))
+                 .ForMember(dest => dest.FechaMovimento, source => source.MapFrom(src => src.FechaMovimento))
+                 .ForMember(dest => dest.SaldoDisponible, source => source.MapFrom(src => src.Valor));
+                 
+
+
+
+
+
+
+
 
         }
 
