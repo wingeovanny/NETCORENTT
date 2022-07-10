@@ -14,7 +14,8 @@ namespace ntt.micros.core.cuentas.domain.entities.cliente
         public string? Telefono { get; set; }
         public string? Genero { get; set; }
         public int? Edad { get; set; }
-        public string? Contraseña { get; set; }
+        public string? Contrasenia { get; set; }
         public bool? Estado { get; set; }
+        
     }
 }

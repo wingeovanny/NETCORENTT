@@ -22,4 +22,8 @@
     <ProjectReference Include="..\ntt.micros.core.cuentas.infrastructure\ntt.micros.core.cuentas.infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+
 </Project>

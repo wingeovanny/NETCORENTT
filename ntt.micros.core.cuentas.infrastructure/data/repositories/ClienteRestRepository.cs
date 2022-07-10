@@ -28,7 +28,10 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
             
             Cliente user = await _context.Clientes.FirstOrDefaultAsync(x=> x.Identificacion == identificacion);// .FirstOrDefault(x => x.Identificacion == identificacion);
 
-            if (user == null) throw new KeyNotFoundException("User not found");
+            if (user == null)
+            {
+                throw new BaseCustomException("Transaccion exisota", "Cliente no existe", 200);
+            }
 
             var clientesResult = _mapper.Map<ClienteResponse>(user);
 
@@ -38,7 +41,6 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
         public async Task<List<ClienteResponse>> ConsultaClientes()
         {
             List<Cliente> user = await _context.Clientes.ToListAsync();
-
 
             var clientesResult = _mapper.Map<List<ClienteResponse>>(user);
 
@@ -64,7 +66,7 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
             }else
             {
                 
-                    throw new BaseCustomException("no existe cliente para actualizar", "",400);
+                    throw new BaseCustomException("No existe cliente para actualizar", "",400);
                 
             }
 
@@ -86,8 +88,6 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
                 // map model to new user object
                 var user = _mapper.Map<Cliente>(request);
 
-                // var entity = await _context.Clientes.FindAsync(request.Identificacion);
-
                 // save user
                 _context.Clientes.Add(user);
                 _context.SaveChanges();
@@ -95,28 +95,37 @@ namespace ntt.micros.core.cuentas.infrastructure.data.repositories
 
                 await _context.SaveChangesAsync();
         
-            return dato;
+            return dato = _mapper.Map<ClienteResponse>(user);
 
         }
-         public int EliminarCliente(string identificacion)
+        public async Task<ClienteResponse> EliminarCliente(string identificacion)
         {
-            int result = 0;
-            var cliente = getUser(identificacion);
-            _context.Clientes.Remove(cliente);
-            _context.SaveChanges();
-            result = 1;
-
-            return  result;
             
+            var entity = await _context.Clientes.FirstOrDefaultAsync(x => x.Identificacion == identificacion);
+          
+            ClienteResponse dato = new ClienteResponse();
+            if (entity!=null)
+            {               
+                var cliente = getUser(Convert.ToInt32(entity.Id));
+                 _context.Clientes.Remove(cliente);
+                _context.SaveChanges();
+               
+            }
+            else
+            {
+                throw new BaseCustomException("", "Cliente no existe", 400);
+            }
+
+
+            return dato;
         }
 
 
         // helper methods
 
-        private Cliente getUser(string identificacion)
+        private Cliente getUser(int id)
         {
-            var user = _context.Clientes.Find(identificacion);
-            if (user == null) throw new KeyNotFoundException("Cliente no existe");
+            var  user = _context.Clientes.Find(id);           
             return user;
         }
 

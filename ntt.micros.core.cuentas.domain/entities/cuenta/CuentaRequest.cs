@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ntt.micros.core.cuentas.domain.entities.cuenta
 {
-    internal class CuentaRequest
+    public class CuentaRequest
     {
-
-        public string? Tipo { get; set; }
-        public double SaldoInicial { get; set; }
-        public bool Estado { get; set; }
         public string? NumeroCuenta { get; set; }
+        public string? TipoCuenta { get; set; }
+        public double? SaldoInicial { get; set; }
+        public bool? Estado { get; set; }
+        public string? NombreCliente { get; set; }
+
     }
 }

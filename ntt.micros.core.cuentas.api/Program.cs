@@ -9,26 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
 builder.Services.AddCors();
-//builder.Services.AddControllers();
 builder.Services.AddControllers()
                 .AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
                     //options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
-                })
-                ;
-//builder.Services.AddControllers().AddJsonOptions(x =>
-//{
-//    // serialize enums as strings in api responses (e.g. Role)
-//    x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-
-//    // ignore omitted parameters on models to enable optional params (e.g. User update)
-//    x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-//});
-//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+                });
+                
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

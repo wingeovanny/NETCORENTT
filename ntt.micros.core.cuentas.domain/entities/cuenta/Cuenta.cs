@@ -5,12 +5,12 @@ namespace ntt.micros.core.cuentas.domain.entities.cuenta
 {
     public class Cuenta
     {
-        public int CuentaID { get; set; }
+        public int Id { get; set; }
         public string? NumeroCuenta { get; set; }
         public string? TipoCuenta { get; set; }
         public double? SaldoInicial { get; set; }
-        public string? Estado { get; set; }
-        public Cliente? Cliente { get; set; }
-        
+        public bool? Estado { get; set; }        
+
+
     }
 }

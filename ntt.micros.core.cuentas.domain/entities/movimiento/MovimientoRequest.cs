@@ -8,9 +8,13 @@ namespace ntt.micros.core.cuentas.domain.entities.movimiento
 {
     public class MovimientoRequest
     {
-        public DateTime FechaMovimento { get; set; }
-        public string? TipoMovimiento { get; set; }
-        public double Valor { get; set; }
-        public double Saldo { get; set; }
+        public string? NumeroCuenta { get; set; }
+        public string? TipoCuenta { get; set; }
+        public double SaldoInicial { get; set; }
+        public string? Estado { get; set; }
+        public string? DescripcionMovimiento { get; set; }
+
+
+      
     }
 }

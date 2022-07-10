@@ -87,9 +87,9 @@ namespace ntt.micros.core.cuentas.api.Controllers
         public async Task<ActionResult<MsDtoResponse<ClienteResponse>>> EliminarCliente([FromHeader][Required] string identificacion)
 
         {
-            int _response =  _clienteRepository.EliminarCliente(identificacion);
-            // return Ok(new MsDtoResponse<ClienteResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
-            return Ok(new { message = "Cliente Eliminado" });
+            ClienteResponse _response = await  _clienteRepository.EliminarCliente(identificacion);
+             return Ok(new MsDtoResponse<ClienteResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
+          
         }
     }
 

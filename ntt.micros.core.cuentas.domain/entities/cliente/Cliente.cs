@@ -8,10 +8,9 @@ namespace ntt.micros.core.cuentas.domain.entities.cliente
 {
     public class Cliente : Persona
     {
-        public int ClienteID { get; set; }
-        public int CuentaID { get; set; }
-        public string? Contraseña { get; set; }          
-        public bool? Estado { get; set; }    
+        public int? Id { get; set; }
+        public string? Contrasenia { get; set; }
+        public bool? Estado { get; set; }
 
     }
 }

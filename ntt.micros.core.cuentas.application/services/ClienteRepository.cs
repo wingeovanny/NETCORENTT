@@ -39,9 +39,9 @@ namespace ntt.micros.core.cuentas.application.services
             return await _clienteRestRespository.CrearCliente(request);
         }
 
-        public  int EliminarCliente(string identificacion)
+        public async Task<ClienteResponse> EliminarCliente(string identificacion)
         {
-            return  _clienteRestRespository.EliminarCliente(identificacion);
+            return  await _clienteRestRespository.EliminarCliente(identificacion);
         }
     }
 }
