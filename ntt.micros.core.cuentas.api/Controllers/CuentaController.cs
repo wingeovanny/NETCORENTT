@@ -31,14 +31,72 @@ namespace ntt.micros.core.cuentas.api.Controllers
         [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
         [ProducesResponseType(typeof(MsDtoResponseError), 400)]
         [ProducesResponseType(typeof(MsDtoResponseError), 500)]
-        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> ConsultaCuenta([FromHeader][Required] string cuenta)
+        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> ConsultaCuentaID([FromHeader][Required] string cuenta)
 
         {
-            CuentaResponse _response = await _cuentaRepository.ConsultaCuenta(cuenta);
+            CuentaResponse _response = await _cuentaRepository.ConsultaCuentaID(cuenta);
             return Ok(new MsDtoResponse<CuentaResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
         }
 
-      
+        [HttpGet]
+        [Route("clientes/consulta-cuentas")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 400)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 500)]
+        public async Task<ActionResult<MsDtoResponse<List<CuentaResponse>>>> ConsultaCuentas([FromHeader][Required] string identificacion)
+
+        {
+            List<CuentaResponse> _response = await _cuentaRepository.ConsultaCuentas(identificacion);
+            return Ok(new MsDtoResponse<List<CuentaResponse>>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
+        }
+
+
+        [HttpPost]
+        [Route("clientes/crear-cuenta")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 400)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 500)]
+        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> CrearCuenta([FromBody][Required] CuentaRequest request)
+
+        {
+            CuentaResponse _response = await _cuentaRepository.CrearCuenta(request);
+            return Ok(new MsDtoResponse<CuentaResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
+        }
+
+
+        [HttpPut]
+        [Route("clientes/actualizar-cuenta")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(MsDtoResponse<CuentaRequest>), 200)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 400)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 500)]
+        public async Task<ActionResult<MsDtoResponse<CuentaRequest>>> ActualizarCliente([FromBody][Required] CuentaRequest request)
+
+        {
+            CuentaRequest _response = await _cuentaRepository.ActualizarCuenta(request);
+            return Ok(new MsDtoResponse<CuentaRequest>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
+        }
+
+
+        [HttpDelete]
+        [Route("clientes/eliminar-cuenta")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(MsDtoResponse<CuentaResponse>), 200)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 400)]
+        [ProducesResponseType(typeof(MsDtoResponseError), 500)]
+        public async Task<ActionResult<MsDtoResponse<CuentaResponse>>> EliminarCuenta([FromHeader][Required] string identificacion)
+
+        {
+            CuentaResponse _response = await _cuentaRepository.EliminarCuenta(identificacion);
+            return Ok(new MsDtoResponse<CuentaResponse>(_response, HttpContext?.TraceIdentifier.Split(":")[0].ToLower()));
+
+        }
 
     }
 }

@@ -1,14 +1,9 @@
-﻿using ntt.micros.core.cuentas.application.interfaces.repositories;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ntt.micros.core.cuentas.application.interfaces.repositories;
+using ntt.micros.core.cuentas.application.models.exeptions;
 using ntt.micros.core.cuentas.domain.entities.cliente;
 using ntt.micros.core.cuentas.infrastructure.data.Context;
-using Microsoft.EntityFrameworkCore;
-using AutoMapper;
-using System.Collections.Generic;
-using Microsoft.Extensions.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ntt.micros.core.cuentas.application.models.exeptions;
 
 namespace ntt.micros.core.cuentas.infrastructure.data.repositories
 {

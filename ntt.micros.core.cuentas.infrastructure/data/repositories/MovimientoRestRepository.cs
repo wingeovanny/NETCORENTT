@@ -1,45 +1,118 @@
-﻿using ntt.micros.core.cuentas.application.interfaces.repositories;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ntt.micros.core.cuentas.application.interfaces.repositories;
+using ntt.micros.core.cuentas.application.models.exeptions;
 using ntt.micros.core.cuentas.domain.entities.movimiento;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ntt.micros.core.cuentas.infrastructure.data.Context;
 
 namespace ntt.micros.core.cuentas.infrastructure.data.repositories
 {
     public class MovimientoRestRepository : IMovimientoRestRepository
     {
+        private readonly DataContext _context;
+        private readonly IMapper _mapper;
+        public MovimientoRestRepository(DataContext context, IMapper Mapper)
+        {
+            _context = context;
+            _mapper = Mapper;
+        }
+
+        public async Task<MovimientoResponse> ActualizarMovimiento(MovimientoResponse request)
+        {
+            var entity = await _context.Movimientos.FirstOrDefaultAsync(x => x.Id == request.Id);
+
+
+            if (entity != null)
+            {
+                entity.TipoMovimiento = request.TipoCuenta;
+                entity.Saldo = request.SaldoInicial;
+                entity.FechaMovimento = DateTime.Now;
+                _context.Entry(entity).State = EntityState.Modified;
+
+                _context.Entry(entity).CurrentValues.SetValues(request);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+
+                throw new BaseCustomException("No existe movimiento para actualizar", "", 400);
+
+            }
+
+            await _context.SaveChangesAsync();
+
+            return request;
+        }
+
+      
+
+        public async Task<List<MovimientoResponse>> ConsultaMovimientoFecha(DateTime fechaInicio)
+        {
+            List<Movimiento> mov = await _context.Movimientos.ToListAsync();
+
+            var movResult = _mapper.Map<List<MovimientoResponse>>(mov);
+
+            return movResult.Where(x => x.FechaMovimento >= fechaInicio).ToList();
+        }
+
+        public async Task<List<MovimientoResponse>> ConsultaMovimientos(string numeroCuenta)
+        {
+            List<Movimiento> mov = await _context.Movimientos.ToListAsync();
+
+            var movResult = _mapper.Map<List<MovimientoResponse>>(mov);
+
+            return movResult.Where(x => x.NumeroCuenta == numeroCuenta).ToList();
+        }
+
         public async Task<List<MovimientoResponse>> ConsultaMovimientoUsuario(string codigoUsuario)
         {
-            List<MovimientoResponse> lista = new List<MovimientoResponse>();
+            List<Movimiento> mov = await _context.Movimientos.ToListAsync();
 
-            MovimientoResponse result = new()
-            {
-                NumeroCuenta = "1221212"
-            };
+            var movResult = _mapper.Map<List<MovimientoResponse>>(mov);
 
-            lista.Add(result);
-
-            return lista;
-
+            return movResult.Where(x => x.Estado == codigoUsuario).ToList();
         }
 
-        public async Task<List<MovimientoResponse>> ConsultaMovimientoFecha(string fechaInicio)
+        public async Task<MovimientoResponse> CrearMovimiento(MovimientoRequest request)
         {
-            List<MovimientoResponse> lista = new List<MovimientoResponse>();
 
-            MovimientoResponse result = new()
-            {
-                NumeroCuenta = "12"
-            };
+            MovimientoResponse dato = new MovimientoResponse();
+            // map model to new user object
+            var mov = _mapper.Map<Movimiento>(request);
 
-            lista.Add(result);
+            // save user
+            _context.Movimientos.Add(mov);
+            _context.SaveChanges();
 
-            return lista;
+            await _context.SaveChangesAsync();
 
+            return dato = _mapper.Map<MovimientoResponse>(mov);
         }
 
+        public async Task<MovimientoResponse> EliminarMovimiento(string numeroCuenta, int idMovimiento)
+        {
+            var entity = await _context.Movimientos.FirstOrDefaultAsync(x => x.Id == idMovimiento);
 
+            MovimientoResponse dato = new MovimientoResponse();
+            if (entity != null)
+            {
+                var cta = getMov(Convert.ToInt32(entity.Id));
+                _context.Movimientos.Remove(entity);
+                _context.SaveChanges();
+
+            }
+            else
+            {
+                throw new BaseCustomException("", "Cuenta no existe", 400);
+            }
+
+            return dato;
+        }
+
+        private Movimiento getMov(int id)
+        {
+            var movimiento = _context.Movimientos.Find(id);
+            return movimiento;
+        }
     }
 }

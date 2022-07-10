@@ -9,6 +9,10 @@ namespace ntt.micros.core.cuentas.application.interfaces.repositories
 {
     public interface ICuentaRestRepository
     {
-        Task<CuentaResponse> ConsultaCuenta(string cuenta);
+        Task<List<CuentaResponse>> ConsultaCuentas(string identificacion);
+        Task<CuentaResponse> ConsultaCuentaID(string numeroCuenta);
+        Task<CuentaResponse> CrearCuenta(CuentaRequest request);
+        Task<CuentaResponse> EliminarCuenta(string numeroCuenta);
+        Task<CuentaRequest> ActualizarCuenta(CuentaRequest request);
     }
 }

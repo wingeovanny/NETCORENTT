@@ -18,9 +18,29 @@ namespace ntt.micros.core.cuentas.application.services
             _icuentaRestRepository = icuentaRestRepository;
         }
 
-        public async Task<CuentaResponse> ConsultaCuenta(string cuenta)
+        public async Task<CuentaRequest> ActualizarCuenta(CuentaRequest request)
         {
-            return await _icuentaRestRepository.ConsultaCuenta(cuenta);
+            return await _icuentaRestRepository.ActualizarCuenta(request);
+        }
+
+        public async Task<CuentaResponse> ConsultaCuentaID(string numeroCuenta)
+        {
+            return await _icuentaRestRepository.ConsultaCuentaID(numeroCuenta);
+        }
+
+        public async Task<List<CuentaResponse>> ConsultaCuentas(string identificacion)
+        {
+            return await _icuentaRestRepository.ConsultaCuentas(identificacion);
+        }
+
+        public async Task<CuentaResponse> CrearCuenta(CuentaRequest request)
+        {
+            return await _icuentaRestRepository.CrearCuenta(request);
+        }
+
+        public async Task<CuentaResponse> EliminarCuenta(string numeroCuenta)
+        {
+            return await _icuentaRestRepository.EliminarCuenta(numeroCuenta);
         }
     }
 }
